@@ -65,6 +65,10 @@ class _KonversiWaktuState extends State<KonversiWaktu> {
                   value: 'WIT',
                   child: Text('WIT'),
                 ),
+                DropdownMenuItem<String>(
+                  value: 'London',
+                  child: Text('London'),
+                ),
               ],
             ),
             const SizedBox(height: 30.0),
@@ -84,7 +88,6 @@ class _KonversiWaktuState extends State<KonversiWaktu> {
               ),
             ),
             SizedBox(height: 40),
-
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushReplacement(context,
@@ -122,6 +125,9 @@ class _KonversiWaktuState extends State<KonversiWaktu> {
       } else if (dropdownValue == "WIT") {
         _currentTime = DateFormat('EEEE, dd MMMM yyyy, HH:mm:ss')
             .format(DateTime.now().add(const Duration(hours: 2)));
+      } else if (dropdownValue == "London") {
+        _currentTime =DateFormat('EEEE, dd MMMM yyyy, HH:mm:ss')
+            .format(DateTime.now().add(const Duration(hours: 18)));
       } else {
         _currentTime =
             DateFormat('EEEE, dd MMMM yyyy, HH:mm:ss').format(DateTime.now());
