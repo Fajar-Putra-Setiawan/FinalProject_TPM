@@ -6,8 +6,6 @@ import 'package:project_akhir_anime_app/MenuNavbar/list.dart';
 import 'package:project_akhir_anime_app/login.dart';
 import 'components/my_textfield.dart';
 import 'model/user_model.dart';
-import 'package:crypto/crypto.dart';
-import 'dart:convert';
 
 TextEditingController _usernameController = TextEditingController();
 TextEditingController _passwordController = TextEditingController();
@@ -66,9 +64,7 @@ class _RegisterPageState extends State<RegisterPage> {
       return null;
     }
 
-    final hashedPassword = hashPassword(password);
-
-    final newUser = User(username, hashedPassword);
+    final newUser = User(password, username);
 
     await userBox.add(newUser);
 
@@ -85,12 +81,6 @@ class _RegisterPageState extends State<RegisterPage> {
         ],
       ),
     );
-  }
-
-  String hashPassword(String password) {
-    final bytes = utf8.encode(password); // Convert password to bytes
-    final digest = sha256.convert(bytes); // Hash the password using SHA-256
-    return digest.toString(); // Return the hashed password as a string
   }
 
   @override

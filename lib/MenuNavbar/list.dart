@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:project_akhir_anime_app/dashboard.dart';
+import 'package:project_akhir_anime_app/login.dart';
+import 'package:project_akhir_anime_app/mainpage.dart';
 import 'package:project_akhir_anime_app/model/user_model.dart';
 
 class UserList extends StatefulWidget {

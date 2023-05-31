@@ -11,6 +11,4 @@ class User extends HiveObject {
   late String password;
 
   User(this.password, this.username);
-
-  get salt => null;
 }

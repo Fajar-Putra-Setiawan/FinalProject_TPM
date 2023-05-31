@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                 ),),
                 
-                  onPressed: () async {
+                  onPressed: () async { 
                     await fetchData(searchController.text).then((value) => {
                           Navigator.push(
                             context,

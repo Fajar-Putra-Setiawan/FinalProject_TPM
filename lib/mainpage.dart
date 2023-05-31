@@ -3,9 +3,9 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:project_akhir_anime_app/MenuNavbar/home.dart';
 import 'package:project_akhir_anime_app/MenuNavbar/kesanpesan.dart';
 import 'package:project_akhir_anime_app/MenuNavbar/konversi_matauang.dart';
-import 'package:project_akhir_anime_app/MenuNavbar/logout.dart';
 import 'package:project_akhir_anime_app/MenuNavbar/profile.dart';
 import 'package:project_akhir_anime_app/MenuNavbar/waktu.dart';
+import 'package:project_akhir_anime_app/anggota.dart';
 
 class HalamanUtama extends StatefulWidget {
   const HalamanUtama({ Key? key }) : super(key: key);
@@ -18,10 +18,9 @@ class _HalamanUtamaState extends State<HalamanUtama> {
   int currentIndex = 0;
   final screens = [
     HomePage(),
-    const Fajar(),
+    const Anggota(),
     const KesanPesan(),
-    KonversiMataUang(),
-    KonversiWaktu()
+    const KonversiWaktu()
   ];
 
   @override
@@ -52,10 +51,6 @@ class _HalamanUtamaState extends State<HalamanUtama> {
               GButton(
                 icon: Icons.note_outlined,
                 text: 'Note',
-              ),
-              GButton(
-                icon: Icons.gamepad_outlined,
-                text: 'Game',
               ),
               GButton(
                 icon: Icons.settings,

@@ -28,9 +28,9 @@ class KesanPesan extends StatelessWidget {
               ),
 
               SizedBox(height: 40),
-              Text("Saran : Mungkin saran untuk nantinya bisa di beri demo program supaya tugas yang di berikan bisa di terima dengan baik oleh para mahasiswanya",style: TextStyle(fontSize: 18,color: Colors.black),),
+              Text("Saran : Materi mungkin di sesuaikan dengan perkembangan SDK yang sekarang, karena sering error jika ketika di demokan langsung",style: TextStyle(fontSize: 18,color: Colors.black),),
               SizedBox(height: 20),
-              Text("Kesan : Salah satu matakuliah materi yang melebihi mata kuliah praktikum nya ",style: TextStyle(fontSize: 18,color: Colors.black)),
+              Text("Kesan : Baik, Seru, Santai dan Tugas nya ga ribet",style: TextStyle(fontSize: 18,color: Colors.black)),
           ],
         ),
       ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_akhir_anime_app/mainpage.dart';
 
-class Fajar extends StatelessWidget {
-  const Fajar({Key? key}) : super(key: key);
+class Islah extends StatelessWidget {
+  const Islah({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,19 +30,19 @@ class Fajar extends StatelessWidget {
           children: [
             const CircleAvatar(
               radius: 70.0,
-              backgroundImage: AssetImage('assets/Photo.jpeg'),
+              backgroundImage: AssetImage('assets/islah.jpg'),
             ),
             const Text(
-              'Fajar Putra Setiawan',
+              'Muhammad Nur Ishlaahudin S.',
               style: TextStyle(
                 fontFamily: 'Pacifico',
-                fontSize: 30,
+                fontSize: 25,
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const Text(
-              '123200092',
+              '123200097',
               style: TextStyle(
                 fontFamily: 'Source Sans Pro',
                 fontSize: 20,
@@ -76,7 +76,7 @@ class Fajar extends StatelessWidget {
                   color: Colors.teal,
                 ),
                 title: Text(
-                  '+62 858-6959-5349',
+                  '+62 852-1023-5280',
                   style: TextStyle(
                     color: Colors.teal.shade900,
                     fontFamily: 'Source Sans Pro',
@@ -94,7 +94,7 @@ class Fajar extends StatelessWidget {
                   color: Colors.teal.shade400,
                 ),
                 title: Text(
-                  '123200092@student.upnyk.ac.id',
+                  '123200097@student.upnyk.ac.id',
                   style: TextStyle(
                     color: Colors.teal.shade900,
                     fontFamily: 'Source Sans Pro',
